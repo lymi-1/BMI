@@ -1,0 +1,74 @@
+
+html {
+  font-size: 13.333333333333334vw;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+input {
+  border: 1px solid #b0b0b0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+em, i {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #b0b0b0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="libs/animate.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<header>
+  <div>
+    <a href="index.html">
+      <img src="images/logo.png" alt="">
+    </a>
+    <a href="javascript:void(0)" class="user"></a>
+  </div>
+</header>
+<main>
+  <p class="content">BMI指数（即身体质量指数，简称体质指数又称体重指数，英文为Body Mass Index，简称BMI）BMI或身体质量指数是找出您的体重是否超重、过轻或理想的快速方法。BMI可通过比较你的身高和体重立刻告诉您。马上就计算您的BMI！</p>
+  <div class="bmi content clearfix">
+    <div class="calc">
+      <h1>体重指数（BMI）指数计算</h1>
+      <div class="form">
+        <p>
+          <span>我的性别：</span>
+          <label>
+            <input class="sex" type="radio" name="sex" value="1" checked>
+            &nbsp;男性&nbsp;&nbsp;
+          </label>
+          <label>
+            <input class="sex" type="radio" name="sex" value="0">
+            &nbsp;女性
+          </label>
+        </p>
+        <p>
+          <span>我的身高：</span>
+          <input id="height" type="text">
+          厘米 cm
+        </p>
+        <p>
+          <span>我的体重：</span>
+          <input id="weight" type="text">
+          千克 kg
+        </p>
+        <p>
+          <span>BMI标准：</span>
+          <select>
+            <option value="" selected="selected">中国标准</option>
+          </select>
+        </p>
+      </div>
+      <p>
+        <input type="checkbox" class="check" checked>
+        保存我的 BMI 记录30天
+      </p>
+      <p id="hide" class="hide">
+        亲爱的<i id="sex" class="red">先生</i>你好！BMI 值为：<i id="value" class="red"></i>，身体状态<i id="status" class="red"></i>
+      </p>
+      <p>
+        <input onclick="calc()" type="submit" value="计算 BMI">
+      </p>
+    </div>
+    <div class="stan">
+      <i id="stan"></i>
+      <h2>成年人的BMI值处于以下阶段↓</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>体型分类</th>
+            <th>BMI值范围</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>偏瘦</td>
+          <td>10.≤18.4</td>
+        </tr>
+        <tr>
+          <td>正常</td>
+          <td>18.5≤23.9</td>
+        </tr>
+        <tr>
+          <td>过重</td>
+          <td>24.0≤27.9</td>
+        </tr>
+        <tr>
+          <td>肥胖</td>
+          <td>28.0≤32.0</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="history content">
+    <h3>我的BMI计算记录</h3>
+    <table>
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>日期</th>
+        <th>身高</th>
+        <th>体重</th>
+        <th>BMI</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody id="list">
+      <!--<tr class="list">
+        <td></td>
+        <td colspan="5">当前没有任何 BMI 记录</td>
+      </tr>-->
+      <!--<tr class="list">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>-->
+      </tbody>
+    </table>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

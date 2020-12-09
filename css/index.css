@@ -1,0 +1,191 @@
+
+
+
+header {
+    background: #222;
+}
+header div {
+    width: 860px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+header div .user {
+    height: 28px;
+    width: 28px;
+    background: url("../images/ico.png") -48px -28px;
+    margin-top: 8px;
+    margin-right: 6px;
+}
+header div a img {
+    width: 110px;
+    padding: 3px 0;
+}
+
+main {
+    height: 140px;
+    background: url("../images/bg.jpg") no-repeat center;
+}
+
+.content {
+    width: 900px;
+    margin: auto;
+}
+
+main > p {
+    padding: 40px 0;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+main .bmi {
+    padding-top: 20px;
+}
+main .bmi .calc {
+    float: left;
+}
+main .bmi .calc h1 {
+    padding: 10px 10px 4px;
+    font-size: 18px;
+    font-weight: normal;
+}
+main .bmi .calc .form {
+    width: 480px;
+    border-radius: 1px;
+    border: 1px #e0e0e0 solid;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    padding: 10px;
+    background-color: #FDFDFD;
+}
+main .bmi .calc  p {
+    height: 24px;
+    line-height: 26px;
+    padding: 10px;
+    font-size: 16px;
+}
+main .bmi .calc .form p span {
+    width: 100px;
+    display: inline-block;
+}
+input[type=text] {
+    border-radius: 3px;
+    border: 1px solid #ADADAD;
+    padding: 5px;
+    width: 150px;
+    height: 18px;
+}
+main .bmi .calc .form p select {
+    border-radius: 3px;
+    border: 1px solid #999;
+    padding: 2px;
+}
+main .bmi .calc > p {
+    display: block;
+    width: 480px;
+    text-align: center;
+    font-size: 14px;
+}
+
+main .bmi .calc .hide {
+    font-weight: bold;
+    text-align: left;
+    display: none;
+}
+main .bmi .calc .hide .red {
+    color: red;
+}
+
+input[type=submit] {
+    width: 200px;
+    cursor: pointer;
+    height: 30px;
+    border: none;
+    background: #2aa0ea;
+    color: #fff;
+}
+
+
+main .bmi .stan {
+    float: right;
+    width: 318px;
+    margin: 10px;
+    position: relative;
+}
+main .bmi .stan i {
+    display: block;
+    height: 36px;
+    width: 32px;
+    background: url("../images/arrow.png") no-repeat center / 24px 20px;
+    position: absolute;
+    left: -32px;
+    top: 68px;
+    opacity: 0;
+}
+main .bmi .stan h2 {
+    font-size: 14px;
+    padding-left: 2px;
+    line-height: 32px;
+}
+main .bmi .stan table {
+    width: 318px;
+}
+main .bmi .stan table tr {
+    line-height: 34px;
+    text-align: center;
+}
+main .bmi .stan table th,
+main .bmi .stan table td {
+    font-size: 1.2em;
+    border: none;
+}
+main .bmi .stan table thead tr {
+    background: #8DD8F8;
+}
+main .bmi .stan table tbody tr:nth-child(1) {background: #ccc;}
+main .bmi .stan table tbody tr:nth-child(2) {background: #66cc00;}
+main .bmi .stan table tbody tr:nth-child(3) {background: #ffff00;}
+main .bmi .stan table tbody tr:nth-child(4) {background: #ff9900;}
+
+
+main .history {
+    margin-bottom: 34px;
+}
+main .history h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+main .history table {
+    width: 900px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    line-height: 39px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+}
+main .history table thead th {
+    color: #888;
+    background: #f7f7f7;
+    font-weight: normal;
+}
+main .history table th,
+main .history table td {
+    border: none;
+}
+main .history table tr {
+    border-bottom: 1px solid #e6e6e6;
+}
+.list td:first-child {
+    color: #888;
+}
+.list td:last-child {
+    color: #2aa0ea;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
